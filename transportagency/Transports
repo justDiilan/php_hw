@@ -1,0 +1,19 @@
+<?php
+class AirTransport extends Transport {
+    public function __construct() {
+        parent::__construct("Air", 800, 10, 0.01);
+    }
+}
+
+class RailTransport extends Transport {
+    public function __construct() {
+        parent::__construct("Rail", 100, 3, 0.05);
+    }
+}
+
+class RoadTransport extends Transport {
+    public function __construct() {
+        parent::__construct("Road", 60, 5, 0.1);
+    }
+}
+?>

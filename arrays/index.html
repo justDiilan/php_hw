@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Управление списком товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Список товаров</h1>
+    <div id="controls">
+        <button onclick="sortItems('quick')">Сортировка (Быстрая)</button>
+        <button onclick="sortItems('bubble')">Сортировка (Пузырьком)</button>
+        <input type="text" id="searchInput" placeholder="Введите название товара">
+        <button onclick="searchItem('binary')">Поиск (Бинарный)</button>
+        <button onclick="searchItem('linear')">Поиск (Линейный)</button>
+        <button onclick="reverseList()">Перевернуть список</button>
+        <button onclick="changeCase()">Изменить регистр</button>
+        <button onclick="filterByPrice('desc')">Фильтр (Дорогие)</button>
+        <button onclick="filterByPrice('asc')">Фильтр (Дешевые)</button>
+    </div>
+    <div id="productList">
+        
+    </div>
+    <div id="moderator">
+        <h2>Модератор</h2>
+        <form id="moderatorLogin">
+            <label for="username">Логин:</label>
+            <input type="text" id="username" name="username">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+            <button type="button" onclick="login()">Войти</button>
+        </form>
+        <div id="moderatorControls" style="display: none;">
+            <button onclick="addItem()">Добавить товар</button>
+            <button onclick="removeItem()">Удалить товар</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+}
+#controls, #moderator {
+    margin: 20px 0;
+}
+#productList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+button {
+    margin-right: 10px;
+}
